@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mp:metadata
+xmlns:mp="http://example.org/MyProject/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xsi:schemaLocation="http://example.org/MyProject/ http://example.org/MyProject/schema.xsd">
+	<dc:title>Het oud vermakelijk luylekker-land</dc:title>
+	<dc:creator xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/18155189881682131129">Johannes Kannewet (II)</dc:creator>
+	<dc:subject>http://iconclass.org/25N1</dc:subject>
+	<dc:subject>Cuccagna; Paese della Cuccagna; Cockaigne; Land of Cockaigne</dc:subject>
+	<dc:subject xsi:type="dcterms:UDC">761</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85027597</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh96011084.html</dc:subject>
+	<dc:description xml:lang="nl">Blad met een grote voorstelling van feestende en etende mensen in het het Luilekkerland. Er komt drank uit een fontein, er hangt vlees in de bomen en er komt eten uit de lucht vallen. Onder de voorstelling een onderschrift in vier kolommen. Genummerd rechtsboven: *96.</dc:description>
+	<dc:publisher xsi:type="dcterms:TGN" mp:ref="http://vocab.getty.edu/page/tgn/7023850">Rijksmuseum</dc:publisher>
+	<dcterms:created>1725 - 1780</dcterms:created>
+	<dc:type xsi:type="dcterms:AAT" mp:ref="http://vocab.getty.edu/page/aat/300041405">Xilografia</dc:type>
+	<dc:format>Carta</dc:format>
+	<dcterms:extent>303x417mm</dcterms:extent>
+	<dc:identifier xsi:type="dcterms:URI">http://hdl.handle.net/10934/RM0001.COLLECT.548760</dc:identifier>
+	<dc:identifier>RP-P-OB-204.188</dc:identifier>
+	<dc:source xsi:type="dcterms:URI">https://www.rijksmuseum.nl/nl/collectie/RP-P-OB-204.188</dc:source>
+	<dc:language>Olandese</dc:language>
+	<dcterms:isPartOf>90402_M_NL_Rijksmuseum</dcterms:isPartOf>
+	<dcterms:isPartOf>Collectie: Prenten</dcterms:isPartOf>
+	<dcterms:isPartOf>Collectie: Volksprenten</dcterms:isPartOf>
+	<dcterms:spatial xsi:type="dcterms:TGN" mp:ref="http://vocab.getty.edu/page/tgn/7016845">Paesi Bassi</dcterms:spatial>
+	<dcterms:temporal>Settecento</dcterms:temporal>
+	<dc:rights>Public Domain Mark 1.0</dc:rights>
+	<dc:rights>http://creativecommons.org/publicdomain/mark/1.0/</dc:rights>
+	<dcterms:provenance>Gift of F.G. Waller</dcterms:provenance>
+</mp:metadata>

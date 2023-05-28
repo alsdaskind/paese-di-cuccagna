@@ -1,0 +1,77 @@
+h2 {
+    text-align: center;
+}
+
+.diriempimento {
+    height:50px;
+}
+.container {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.navbar {
+    background: whitesmoke;
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+.caption {
+    text-align:center;
+}
+
+.tornasu {
+    text-align:center;
+    padding-bottom:20px;
+}
+
+footer {
+    padding-top:30px;
+    background: whitesmoke;
+}
+
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+blockquote {
+    font-size: 14px;
+}
+
+.giustificato {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+  .centrato {
+    text-align: center;
+  }
+
+  .contenitore-bottone {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .carousel-caption {
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    color: white; /* Imposta il colore del testo */
+    padding: 30px; /* Aggiungi un po' di spazio intorno alla caption */
+  }

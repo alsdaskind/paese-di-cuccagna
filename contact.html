@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>Contattaci</title>
+  <link rel="icon" type="image/x-icon" href="IMG/Favicon.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <META NAME="DC.Title" CONTENT="Il Paese di Cuccagna">
+  <META NAME="DC.Creator" CONTENT="Francesca Fabris">
+  <META NAME="DC.Subject" CONTENT="Rappresentazione, Cuccagna, Paese di Cuccagna, Bengodi, Dipinti, Letteratura">
+  <META NAME="DC.Description" CONTENT="Sito creato per permettere una navigazione e un raffronto tra le diverse rappresentazioni del Paese della Cuccagna che si sono date nel corso della storia occidentale">
+  <META NAME="DC.Publisher" CONTENT="Università di Bologna">
+  <META NAME="DC.Date" CONTENT="30/05/2023">
+  <META NAME="DC.Type" CONTENT="Sito web">
+  <META NAME="DC.Format" CONTENT="HTML">
+  <META NAME="DC.Identifier" CONTENT="https://alsdaskind.github.io/paese-di-cuccagna/">
+  <META NAME="DC.Language" CONTENT="Italiano">
+  <META NAME="DC.Rights" CONTENT="Accesso libero Creative Commons">
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 100px, 50px;
+    padding: 25px 100px 25px 100px;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <section class="diriempimento"></section>
+  <!-- Bootstrap Contact Section, che utilizza l'elemento "form"-->
+  <section>
+  <div class="container">
+    <div class="centrato">
+      <h3>Osservazioni? Domande? Proposte?</h3>
+      <p>Lasciaci un messaggio, verrai ricontattato quanto prima possibile</p>
+    </div>
+    <div class="row">
+      <div class="column centrato">
+        <img src="IMG/Contact.png" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="firstname" placeholder="Il tuo nome..">
+          <label for="lname">Cognome</label>
+          <input type="text" id="lname" name="lastname" placeholder="Il tuo cognome..">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Il tuo indirizzo di posta elettronica..">
+          <label for="question">Come ci hai scoperto?</label>
+          <select id="quest" name="question">
+            <option value="università">Università</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="ricercaautonoma">Ricerca autonoma</option>
+            <option value="altro">Altro</option>
+          </select>
+          <label for="subject">Oggetto</label>
+          <textarea id="subject" name="subject" placeholder="Scrivi qualcosa.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="diriempimento"></section>
+</body>
+</html>

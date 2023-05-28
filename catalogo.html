@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>Catalogo generale</title>
+  <link rel="icon" type="image/x-icon" href="IMG/Favicon.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <META NAME="DC.Title" CONTENT="Il Paese di Cuccagna">
+  <META NAME="DC.Creator" CONTENT="Francesca Fabris">
+  <META NAME="DC.Subject" CONTENT="Rappresentazione, Cuccagna, Paese di Cuccagna, Bengodi, Dipinti, Letteratura">
+  <META NAME="DC.Description" CONTENT="Sito creato per permettere una navigazione e un raffronto tra le diverse rappresentazioni del Paese della Cuccagna che si sono date nel corso della storia occidentale">
+  <META NAME="DC.Publisher" CONTENT="Università di Bologna">
+  <META NAME="DC.Date" CONTENT="30/05/2023">
+  <META NAME="DC.Type" CONTENT="Sito web">
+  <META NAME="DC.Format" CONTENT="HTML">
+  <META NAME="DC.Identifier" CONTENT="https://alsdaskind.github.io/paese-di-cuccagna/">
+  <META NAME="DC.Language" CONTENT="Italiano">
+  <META NAME="DC.Rights" CONTENT="Accesso libero Creative Commons">
+</head>
+
+<body>
+<!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Introduzione</a><li>
+              <li><a href="index.html">Cenni storici</a><li>
+              <li><a href="index.html">Aggiunti di recente</a><li>
+            </ul>
+          </li>
+          <li><a href="ilprogetto.html">Il progetto</a></li>
+          <li><a href="#">Catalogo</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Esplora<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="esplora.html">Per luoghi</a></li>
+              <li><a href="esplora.html">Per date</a></li>
+              <li><a href="esplora.html">Per percorsi</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right"> <!-- Modal per Signup e Login -->
+          <li><a href="#" data-toggle="modal" data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="top" class="diriempimento"></section>
+
+  <section class="container"><h2>Catalogo <small>Naviga il catalogo</small></h2></section>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Filtra per</h4>
+          </div>
+          <div class="panel-body">
+            <form> <!-- Navigazione per filtri: elemento form -->
+              <div class="form-group">
+                <label for="search">Ricerca</label>
+                <input type="text" class="form-control" id="search" placeholder="Cerca...">
+              </div>
+              <div class="form-group">
+                <label for="category">Datazione</label>
+                <select class="form-control" id="category">
+                  <option value="">Tutti i secoli</option>
+                  <option value="categoria1">Duecento</option>
+                  <option value="categoria2">Trecento</option>
+                  <option value="categoria3">Quattrocento</option>
+                  <option value="categoria4">Cinquecento</option>
+                  <option value="categoria5">Seicento</option>
+                  <option value="categoria6">Settecento</option>
+                  <option value="categoria7">Ottocento</option>
+                  <option value="categoria8">Novecento</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="category">Area di provenienza</label>
+                <select class="form-control" id="category">
+                  <option value="">Tutte le aree</option>
+                  <option value="categoria1">Italia</option>
+                  <option value="categoria2">Francia</option>
+                  <option value="categoria3">Paesi Bassi</option>
+                  <option value="categoria4">Spagna</option>
+                  <optio value="categoria5">...</optio>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="category">Tipo di oggetto</label>
+                <select class="form-control" id="category">
+                  <option value="">Tutte le categorie</option>
+                  <option value="categoria1">Testo</option>
+                  <option value="categoria2">Dipinto</option>
+                  <option value="categoria3">Stampa</option>
+                  <option value="categoria4">...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="category">Parole chiave</label>
+                <select class="form-control" id="category">
+                  <option value="">Tutte le parole chiave</option>
+                  <option value="categoria1">Cuccagna</option>
+                  <option value="categoria2">Bengodi</option>
+                  <option value="categoria3">Eldoardo</option>
+                  <option value="categoria5">Carnevale</option>
+                  <option value="categoria6">Altro...</option>
+                </select>
+              </div>
+              <div class="centrato">
+              <button type="submit" class="btn btn-primary">Filtra</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div><h5>Ordina per:
+          <button type="button" class="btn">Titolo (A-Z)</button>
+          <button type="button" class="btn btn-default">Creatore (A-Z)</button>
+          <button type="button" class="btn btn-primary">Ordine cronologico</button>
+          </h5>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Anteprima</th>
+              <th>Titolo</th>
+              <th>Creatore</th>
+              <th>Datazione</th>
+            </tr>
+          </thead>
+          <tbody style="text-align:left">
+            <tr>
+              <td><a href="item1.html" title="Apri la pagina dell'item"><img src="IMG/Item1.jpeg" alt="Lights" style="height:60px" class="img-thumbnail"></a></td>
+              <td>Het oud vermakelijk luylekker-land</td>
+              <td>Johannes Kannewet</td>
+              <td>1725 - 1780</td>
+            </tr>
+            <tr>
+              <td><a href="item2.html" title="Apri la pagina dell'item"><img src="IMG/Item2.jpg" style="height:60px" class="img-thumbnail"></a></td>
+              <td>Decameron</td>
+              <td>Giovanni Boccaccio</td>
+              <td>1349 - 1351</td>
+            </tr>
+            <tr>
+              <td><a href="#" title="Apri la pagina dell'item"><img src="IMG/Item3.jpg" style="height:60px" class="img-thumbnail"></a></td>
+              <td>Luilekkerland</td>
+              <td>Pieter Bruegel</td>
+              <td>1567</td>
+            </tr>
+            <tr>
+              <td><a href="#" title="Apri la pagina dell'item"><img src="IMG/Item4.jpeg" style="height:60px" class="img-thumbnail"></a></td>
+              <td>Discritione del paese di Chucagna</td>
+              <td>Sconosciuto</td>
+              <td>1614</td>
+            </tr>
+            <tr>
+              <td><a href="#" title="Apri la pagina dell'item"><img src="IMG/Item5.jpg" style="height:60px" class="img-thumbnail"></a></td>
+              <td>Veduta fantastica dell'isola felice di Bengodi</td>
+              <td>Pietro Parigi</td>
+              <td>1928</td>
+            </tr>
+            <tr>
+              <td><a href="#" title="Apri la pagina dell'item"><img src="IMG/Item6.jpg" style="height:60px" class="img-thumbnail"></a></td>
+              <td>Il paese della Cuccagna: melodramma giocoso</td>
+              <td>Carlo Goldoni</td>
+              <td>XVIII secolo</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <div style="text-align: center"> <div class="pagination"> <!-- Bootstrap pagination -->
+          <a href="#">&laquo;</a>
+          <a class="active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+      </div>
+  </section>
+  <section>
+    <div class="jumbotron container text-center"> <!-- Jumbotron per newsletter -->
+      <h2>Iscriviti alla newsletter</h2> 
+      <p>Rimani aggiornato sui nuovi contenuti</p> 
+      <form class="form-inline">
+        <div class="input-group">
+          <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-danger">Iscriviti</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Per tornare su -->
+  <section>
+    <div class="tornasu">
+    <a style="text-align: center;" href="#top" title="Torna su"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="row text-left">
+      <div class="col-sm-6"><p><b>Il paese di Cuccagna</b></p>
+      <p><a href="#">Download del dataset</a></p>
+      <p><a href="#">Credits</a></p>
+      <p><a href="#">Licenze</a></p>
+      </div>
+      <div class="col-sm-6"><p><b>/DH.arc - Digital Humanities Advanced Research Centre</b></p>
+      <p><a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc" target="_blank">About</a></p>
+      <p><a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc" target="_blank">Tutti i progett di DH.arc</a></p>
+      <p><a href="https://centri.unibo.it/dharc/en/contacts" target="_blank">Contatti</a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p><b>&copy; Copyright</b> Francesca Fabris, 2023 - Corso di Digital Humanities e Patrimonio Culturale</p>
+    </div>
+  </footer>
+
+  <!-- Modal Signup e Login -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Registrati</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenuto del form di registrazione -->
+          <form>
+            <div class="form-group">
+              <label for="name">Username</label>
+              <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo username">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Inserisci la tua password">
+            </div>
+            <button type="submit" class="btn btn-primary">Registrati</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Accedi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenuto del form di login -->
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Inserisci il tuo username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Inserisci la tua password">
+            </div>
+            <button type="submit" class="btn btn-primary">Accedi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
